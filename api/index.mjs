@@ -1,4 +1,6 @@
 import serverless from 'serverless-http';
 import app from '../express-app.mjs';
 
-export default serverless(app);
+const getApp = () => serverless(app);
+
+export default getApp();
