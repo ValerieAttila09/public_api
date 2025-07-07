@@ -1,4 +1,4 @@
-const serverLess = require('vercel-express')
 const app = require('../express-app')
+const serverless = require('serverless-http');
 
-module.exports = serverLess(app)
+module.exports.handler = serverless(app)
